@@ -1,7 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const siteUrl =
-  "https://piping-portal-all-calculation-aiygib1px-b721260-4852s-projects.vercel.app";
+const siteUrl = "https://piping-portal-all-calculation.vercel.app";
 
 export default function robots(): MetadataRoute.Robots {
   return {

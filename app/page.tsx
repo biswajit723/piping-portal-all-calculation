@@ -156,8 +156,13 @@ export default function AllCalculator() {
   const steelArea =
     OD > 0 && pipeID > 0 ? (Math.PI / 4) * (OD * OD - pipeID * pipeID) : 0;
 
-  const pipeVolume =
+  // Internal volume of one straight pipe.
+  // ID is entered in mm and length in m, so ID is converted to metres.
+  const pipeVolumePerPipe =
     pipeID > 0 && L > 0 ? (Math.PI / 4) * (pipeID / 1000) ** 2 * L : 0;
+
+  // Total internal volume for the entered quantity of pipes.
+  const pipeVolumeTotal = pipeVolumePerPipe * QTY;
 
   // Approximate theoretical mass.
   // Density is kg/m3.
@@ -801,7 +806,7 @@ export default function AllCalculator() {
                     marginTop: '8px',
                   }}
                 >
-                  15+
+                  10+
                 </div>
 
                 <span
@@ -1209,11 +1214,35 @@ export default function AllCalculator() {
 
               {calcCard({
                 title: '🛢️ Pipe Internal Volume',
-                description: 'Approximate internal volume for a straight pipe.',
+                description:
+                  'Calculate internal volume for one pipe and the total volume for the entered quantity.',
                 formula: 'V = π/4 × ID² × L',
-                note: 'Calculated using the internal diameter and straight pipe length.',
+                note:
+                  'ID comes from OD − 2t. Length is in metres. Quantity is applied to the total volume.',
                 children: (
-                  <div style={resultStyle}>{pipeVolume.toFixed(4)} m³</div>
+                  <>
+                    <div style={resultStyle}>
+                      {pipeVolumePerPipe.toFixed(4)} m³ / pipe
+                    </div>
+
+                    <div
+                      style={{
+                        marginTop: '8px',
+                        color: '#cbd5e1',
+                      }}
+                    >
+                      Quantity: {QTY}
+                    </div>
+
+                    <div
+                      style={{
+                        marginTop: '5px',
+                        color: '#cbd5e1',
+                      }}
+                    >
+                      Total Volume: {pipeVolumeTotal.toFixed(4)} m³
+                    </div>
+                  </>
                 ),
               })}
 

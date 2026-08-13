@@ -1819,3 +1819,4 @@ export default function AllCalculator() {
     </div>
   );
 }
+// Calculator UI update

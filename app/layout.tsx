@@ -4,47 +4,48 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const siteUrl =
-  "https://piping-portal-all-calculation-aiygib1px-b721260-4852s-projects.vercel.app";
+const siteUrl = "https://piping-portal-all-calculation.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
   title: {
-    default: "JEET OS | Piping Engineering Calculator",
-    template: "%s | JEET OS",
+    default: "Pipe Calculator | All Calculator",
+    template: "%s | All Calculator",
   },
 
   description:
-    "JEET OS is a piping engineering calculator portal for pipe weight, pipe dimensions, flow velocity, pressure drop, Reynolds number, thermal expansion, offset calculations and engineering unit conversions.",
+    "Pipe Calculator provides piping engineering calculations including pipe weight, pipe dimensions, pipe thickness, flow velocity, pressure drop, Reynolds number, thermal expansion and engineering unit conversions.",
 
   keywords: [
-    "JEET OS",
-    "Piping Engineering Calculator",
+    "Pipe Calculator",
     "Pipe Weight Calculator",
     "Pipe Thickness Calculator",
+    "Pipe Dimension Calculator",
     "Pipe ID Calculator",
     "Pipe OD Calculator",
+    "Pipe Flow Calculator",
     "Flow Velocity Calculator",
     "Pressure Drop Calculator",
     "Reynolds Number Calculator",
     "Thermal Expansion Calculator",
-    "Piping Engineering Tools",
+    "Piping Engineering Calculator",
+    "Piping Calculator",
     "Engineering Calculator",
-    "Pipe Engineering",
-    "Piping Tools",
+    "Pipe Engineering Tools",
+    "All Calculator",
   ],
 
   authors: [
     {
-      name: "Engineer Jeet",
+      name: "All Calculator",
     },
   ],
 
-  creator: "Engineer Jeet",
-  publisher: "JEET OS",
+  creator: "All Calculator",
+  publisher: "All Calculator",
 
-  applicationName: "JEET OS",
+  applicationName: "All Calculator",
 
   category: "Engineering",
 
@@ -65,17 +66,17 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    siteName: "JEET OS",
-    title: "JEET OS | Piping Engineering Calculator",
+    siteName: "All Calculator",
+    title: "Pipe Calculator | All Calculator",
     description:
-      "Professional piping engineering calculators for pipe weight, flow velocity, pressure drop, Reynolds number, thermal expansion, pipe dimensions and engineering unit conversion.",
+      "Professional pipe and piping engineering calculators for pipe weight, dimensions, flow velocity, pressure drop, Reynolds number, thermal expansion and engineering calculations.",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "JEET OS | Piping Engineering Calculator",
+    title: "Pipe Calculator | All Calculator",
     description:
-      "Piping engineering calculators and engineering utilities by JEET OS.",
+      "Pipe calculators and piping engineering calculation tools from All Calculator.",
   },
 
   alternates: {

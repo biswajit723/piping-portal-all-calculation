@@ -12,7 +12,7 @@ type CalcCardProps = {
   note?: string;
 };
 
-export default function JeetPipingOS() {
+export default function AllCalculator() {
   const [activeTab, setActiveTab] = useState<Tab>('dashboard');
   const [time, setTime] = useState('');
   const [date, setDate] = useState('');
@@ -502,7 +502,7 @@ export default function JeetPipingOS() {
             letterSpacing: '2px',
           }}
         >
-          JEET OS
+          All Calculator
         </div>
 
         <div
@@ -514,7 +514,7 @@ export default function JeetPipingOS() {
             marginBottom: '30px',
           }}
         >
-          PIPING ENGINEERING CENTER
+          Pipe Calculator
         </div>
 
         <div
@@ -601,7 +601,7 @@ export default function JeetPipingOS() {
             border: '1px solid #1e293b',
           }}
         >
-          <div style={{ fontWeight: 800 }}>Engineer Jeet</div>
+          <div style={{ fontWeight: 800 }}>All Calculator</div>
 
           <div
             style={{
@@ -610,7 +610,7 @@ export default function JeetPipingOS() {
               marginTop: '4px',
             }}
           >
-            Piping Engineering Portal
+            Pipe Calculator
           </div>
         </div>
       </aside>
@@ -767,7 +767,7 @@ export default function JeetPipingOS() {
                   margin: '5px 0',
                 }}
               >
-                Welcome, Engineer Jeet 👋
+                Welcome, All Calculator 👋
               </h1>
 
               <p style={{ color: '#94a3b8' }}>
